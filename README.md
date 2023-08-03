@@ -11,6 +11,6 @@ Required Tools :
 1->Code should be running (Integrated way like code should be running same way in ubantu , mac , windows) in every env - Docker ( Virtualized container )
 2->Github [where all my code present ]
 3->AWS EC2 Instace [ Like a fake server by amazon cloud ]
-4->jenkins [deliver code to ec2 - need to create a pipeline - jenkins ]
+4->jenkins [deliver code to ec2 - need to create a pipeline - jenkins ] 
 
 

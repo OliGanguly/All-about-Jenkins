@@ -1,1 +1,49 @@
+steps :
+
+1.Create a ec2 Instance [Server provided by aws ]
+2.connect to aws console
+
+commands:
+1.sudo su [ super user ]
+
+2.apt update -y
+
+3.apt upgrade -y
+
+4.sudo apt install openjdk-11-jre [Install java]
+
+5.java -version
+
+6.go to jenkins website
+https://www.jenkins.io/doc/book/installing/linux/
+copy Installation command
+Like :
+curl -fsSL https://pkg.jenkins.io/debian-stable/jenkins.io-2023.key | sudo tee \
+  /usr/share/keyrings/jenkins-keyring.asc > /dev/null
+echo deb [signed-by=/usr/share/keyrings/jenkins-keyring.asc] \
+  https://pkg.jenkins.io/debian-stable binary/ | sudo tee \
+  /etc/apt/sources.list.d/jenkins.list > /dev/null
+sudo apt-get update
+sudo apt-get install jenkins
+
+7.Check the status of Jenkins:
+systemctl status jenkins
+
+8.Try to connect:
+public-ip:8080
+Like - http://3.145.75.211:8080
+
+9.go to Ec2 Instance
+Edit security Group
+Add One group [ Add Role ]
+Custom TCP ------Port 8080 ---- source - MY IP [ I will access Jenkis server through my IP only ]
+
+10.sudo cat "file path to see the passpowd" .
+11.Install Suggested Plugin
+
+
+
+
+
+
 
